@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'my'
+    'my',
+    'edtech.apps.EdtechConfig'
 ]
 
 MIDDLEWARE = [
@@ -77,15 +78,15 @@ WSGI_APPLICATION = 'test1.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URl': 'postgres://default:C6NFG8JpEwsv@ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require',
-        'NAME': 'verceldb',
-        'USER': 'default',
-        'PASSWORD': 'C6NFG8JpEwsv',
-        'HOST': 'ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech',
-        'PORT': 5432
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'URl': 'postgres://default:C6NFG8JpEwsv@ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require',
+    #     'NAME': 'verceldb',
+    #     'USER': 'default',
+    #     'PASSWORD': 'C6NFG8JpEwsv',
+    #     'HOST': 'ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech',
+    #     'PORT': 5432
+    # }
 }
 
 
@@ -123,9 +124,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-
-STATIC_URL = "staticfiles/"
+STATIC_URL = "static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
