@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-n#4msb+3y19!ymy_*@5vynqcn(-3lx6v*1xk*s8tdv@*qf8m=y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -78,15 +78,15 @@ WSGI_APPLICATION = 'test1.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'URl': 'postgres://default:C6NFG8JpEwsv@ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require',
-    #     'NAME': 'verceldb',
-    #     'USER': 'default',
-    #     'PASSWORD': 'C6NFG8JpEwsv',
-    #     'HOST': 'ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech',
-    #     'PORT': 5432
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'URl': 'postgres://default:C6NFG8JpEwsv@ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'C6NFG8JpEwsv',
+        'HOST': 'ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech',
+        'PORT': 5432
+    }
 }
 
 
@@ -124,9 +124,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "staticfiles/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
+STATIC_URL = "/staticfiles/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'edtech/static/')
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
