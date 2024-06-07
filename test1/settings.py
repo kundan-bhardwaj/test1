@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'URl': 'postgres://default:C6NFG8JpEwsv@ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require',
         'NAME': 'verceldb',
-        'USER': 'edtech',
+        'USER': 'default',
         'PASSWORD': 'C6NFG8JpEwsv',
         'HOST': 'ep-shrill-hill-a4sb7cje-pooler.us-east-1.aws.neon.tech',
         'PORT': 5432
