@@ -1,0 +1,130 @@
+
+#theading{
+    display: flex;
+    justify-content: center;
+}
+#tcont{
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+#qcont{
+    box-shadow: 0.1rem 0.1rem 3rem rgba(13, 0, 255, 0.295);
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+#allques{
+    box-shadow: 0.1rem 0.1rem 3rem rgba(13, 0, 255, 0.295);
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 25rem;
+}
+.ques{
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#st{
+    display: inline-flex;
+    font-weight: bold;
+    font-size: large;
+}
+#qbucket{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+.qbox{
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: min-content;
+    padding: 1.2rem;
+    background-color: rgb(238, 238, 238);
+}
+#options{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 30rem;
+    gap: 1.5rem;
+}
+.option{
+    display: inline-flex;
+    padding: 1rem;
+    font-size: small;
+    background-color: rgb(238, 238, 238);
+    border-radius: 1rem;
+    gap: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+.option:hover{
+    background-color: rgba(0, 255, 0, 0.179);
+}
+.oname{
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 50%;
+    font-weight: normal;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.buttons{
+    display: flex;
+    margin-top: 2rem;
+    user-select: none;
+    gap: 1.5rem;
+}:disabled{
+    background-color: rgb(238, 238, 238);
+    color: rgb(115, 115, 115);
+}
+.nbtn{
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#prev{
+    background-color: rgba(255, 255, 0, 0.247);
+    color: rgb(255, 187, 0);
+}
+#prev:hover{
+    background-color: rgb(255, 221, 0);
+    color: rgb(0, 0, 0);
+}
+#rev{
+    background-color: rgba(0, 72, 255, 0.219);
+    color: rgb(0, 21, 255);
+    justify-self: flex-end;
+    margin-left: auto;
+}
+#rev:hover{
+    background-color: rgb(0, 85, 255);
+    color: rgb(255, 255, 255);
+}
+#next{
+    background-color: rgba(0, 255, 0, 0.179);
+    color: rgb(0, 133, 0);
+}
+#next:hover{
+    background-color: rgb(0, 133, 0);
+    color: aliceblue;
+}
+#rd{
+    transform: scale(2);
+    accent-color: rgb(92, 0, 115);
+}
+
+@media only screen and (max-width: 650px) {
+    #allques{
+        display: none;
+    }
+}

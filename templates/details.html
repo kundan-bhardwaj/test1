@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="cardc">
+            <div id="topcard">
+                <div id="cimgc">
+                    <img id="cimg" src={{img}} alt="">
+                </div>
+                <div>
+                    <h3>Regulatory Information For Power Engineers</h3>
+                    <div class="inlinetext">
+                        <label for="" class="textitem"><img class="smallicon" src="{% static 'images/hourglass.png' %}" alt="">8h
+                            00min</label>
+                        <label for="" class="textitem">EN</label>
+                    </div>
+                    <hr>
+                    <div id="ctype"><img class="smallicon" src="{% static 'images/elearn.png' %}" alt="">&nbsp;E - Learning</div>
+                </div>
+            </div>
+        </div>
+        <div id="add">
+            <label id="price">$ 510.00</label>
+            <div>
+                <label for="" onclick="cl('flex','options')">select a session</label>
+                <div class="popup" id="options">
+                    <hr>
+                    <div id="option">
+                        <div id="stitle">
+                            <h4 id="">October 7 2023</h4>
+                            <span>1 Event</span>
+                        </div>
+                        <div id="sdet">
+                            <div class="date">start: 10/272023</div>
+                            <div class="date">end: 10/272023</div>
+                        </div>
+                        <label for="" id="duration">duration: 8hours</label>
+                    </div>
+                    <hr>
+                    <div id="option">
+                        <div id="stitle">
+                            <h4 id="">October 7 2023</h4>
+                            <span>1 Event</span>
+                        </div>
+                        <div id="sdet">
+                            <div class="date">start: 10/272023</div>
+                            <div class="date">end: 10/272023</div>
+                        </div>
+                        <label for="" id="duration">duration: 8hours</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="atc">Add to Cart</div>
+        </div>
+        <div id="tabview">
+            <div id="bar">
+                <div onclick="opentab(this,'tab1')" class="tbtn">sessions</div>
+                <div onclick="opentab(this,'tab2')" class="tbtn">about the course</div>
+                <div onclick="opentab(this,'tab3')" class="tbtn">content</div>
+            </div>
+            <div id="tabs">
+                <div id="tab1" class="tab">
+                    <label for="" onclick="cl('flex','filter')">Filters</label>
+                    <hr>
+                    <div class="popup" id="filter">
+                        <label for="">Filters</label>
+                        <div id="fbtns">
+                            <div class="fbtn" id="cl">clear</div>
+                            <div class="fbtn" id="ap" onclick="cl('none','filter')">apply</div>
+                        </div>
+                        <details id="fdet">
+                            <summary>Session Attandance Type</summary>
+                            <label for=""><input class="cb" type="checkbox">Full Onsite</label>
+                            <label for=""><input class="cb" type="checkbox">Full Online</label>
+                            <label for=""><input class="cb" type="checkbox">Flexible</label>
+                            <label for=""><input class="cb" type="checkbox">Blended</label>
+                        </details>
+                        <details id="fdet">
+                            <summary>Locations</summary>
+                            <label for=""><input class="cb" type="checkbox">text</label>
+                        </details>
+                    </div>
+                    <div>
+                        <div>
+                            <div id="stitle">
+                                <h4 id="">October 7 2023</h4>
+                                <span>1 Event</span>
+                            </div>
+                            <div id="sdet">
+                                <div class="date">start: 10/272023</div>
+                                <div class="date">end: 10/272023</div>
+                                <div class="sdeti" id="loc"><img id="ic" src="{% static 'images/map.png' %}" alt="">Locations
+                                    ABSA Calgary Office
+                                    CANADA
+                                    Deerfoot Atrium South, Suite 380, 6715 8 Street NE. Calgary, AB T2E 7H7</div>
+                                <div class="sdeti"><img id="ic" src="{% static 'images/burger.png' %}" alt="">food provided</div>
+                            </div>
+                            <label for="" id="duration">duration: 8hours</label>
+                        </div>
+                        <hr>
+                        <div>
+                            <div id="stitle">
+                                <h4 id="">October 7 2023</h4>
+                                <span>1 Event</span>
+                            </div>
+                            <div id="sdet">
+                                <div class="date">start: 10/272023</div>
+                                <div class="date">end: 10/272023</div>
+                                <div class="sdeti" id="loc"><img id="ic" src="{% static 'images/map.png' %}" alt="">Locations
+                                    ABSA Calgary Office
+                                    CANADA
+                                    Deerfoot Atrium South, Suite 380, 6715 8 Street NE. Calgary, AB T2E 7H7</div>
+                                <div class="sdeti"><img id="ic" src="{% static 'images/burger.png' %}" alt="">food provided</div>
+                            </div>
+                            <label for="" id="duration">duration: 8hours</label>
+                        </div>
+                        <hr>
+                        <div>
+                            <div id="stitle">
+                                <h4 id="">October 7 2023</h4>
+                                <span>1 Event</span>
+                            </div>
+                            <div id="sdet">
+                                <div class="date">start: 10/272023</div>
+                                <div class="date">end: 10/272023</div>
+                                <div class="sdeti" id="loc"><img id="ic" src="{% static 'images/map.png' %}" alt="">Locations
+                                    ABSA Calgary Office
+                                    CANADA
+                                    Deerfoot Atrium South, Suite 380, 6715 8 Street NE. Calgary, AB T2E 7H7</div>
+                                <div class="sdeti"><img id="ic" src="{% static 'images/burger.png' %}" alt="">food provided</div>
+                            </div>
+                            <label for="" id="duration">duration: 8hours</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab">
+                    Regulatory Information for Power Engineers will:
+                    <div>
+                        <ul>
+                            <li><span class="boldsp">Broaden</span> one's knowledge in the legislation requirements for
+                                individuals who maintain,
+                                repair and operate pressure equipment described in the Power Engineers Regulation</li>
+                            <li><span class="boldsp">Address</span> essential areas of the Safety Codes Act and
+                                subsidiary legislation related to
+                                the operation of pressure equipment subject to the Act</li>
+                            <li><span class="boldsp">Streamline</span> individual regulatory responsibilities for
+                                operation of pressure equipment
+                            </li>
+                            <li><span class="boldsp">Support</span> the understanding of the processes administered by
+                                ABSA</li>
+                        </ul>
+                    </div>
+                    Topics include:
+                    <div>
+                        <ul>
+                            <li>Purpose of the Power Engineers Regulation</li>
+                            <li>The Safety Codes Act and Pressure Equipment Safety Regulation pertaining to Power
+                                Engineers</li>
+                            <li>Supervision requirements within a plant</li>
+                            <li>Deficiencies commonly found during plant inspections</li>
+                            <li>Required log book entries</li>
+                            <li>Penalties under the Power Engineers Regulation</li>
+                            <li>Qualifications for Power Engineers</li>
+                            <li>Duties and responsibilities of Chief Power Engineers (e.g., repairs, alterations,
+                                maintenance, training, etc.)</li>
+                            <li>Requests for the issuance of temporary certificates</li>
+                        </ul>
+                    </div>
+                    <span class="boldsp">RIPE</span> will increase awareness of what a Safety Codes Offices is reviewing
+                    when inspecting or auditing
+                    a plant.
+                </div>
+                <div id="tab3" class="tab">
+                    <div class="contentitems">
+                        <img id="smic" src="{% static 'images/play-button.png' %}" alt="">
+                        tutorial on power sys
+                    </div>
+                    <div class="contentitems">
+                        <img id="smic" src="{% static 'images/zip.png' %}" alt="">
+                    </div>
+                    <div class="contentitems">
+                        <img id='smic' src="{% static 'images/form.png' %}" alt="">
+                        Dietary Restrictions Form
+                    </div>
+                    <div class="contentitems">
+                        <img id='smic' src="{% static 'images/form.png' %}" alt="">
+                        Feedback Form
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <!-- function for contralling tabs -->
+    <script>
+
+        function opentab(btn, tab) {
+            let els1 = document.getElementsByClassName('tab')
+            let ele = document.getElementById(tab)
+            for (var i = 0; i < els1.length; i++) {
+                els1[i].style.display = 'none'
+            }
+            let els2 = document.getElementsByClassName('tbtn')
+            for (var i = 0; i < els2.length; i++) {
+                els2[i].style.boxShadow = ''
+                els2[i].style.backgroundImage = ''
+            }
+            btn.style.boxShadow = 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;'
+            btn.style.backgroundImage = 'linear-gradient(to top left, rgb(76, 0, 255), rgb(0, 255, 247))'
+            ele.style.display = 'block'
+        }
+        function cl(dis, element) {
+            let ele = document.getElementById(element)
+            ele.style.display = dis
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+#main{
+    padding: 1rem;
+}
+
+#card{
+    width: min-content;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 0.01rem solid rgba(4, 11, 83, 0.264);
+    height: fit-content;
+}
+#hovereff{
+    align-self: baseline;
+    padding-top: 0.5rem;
+}
+#card:hover{
+    scale: 1.001;
+    margin-top: -1rem;
+    box-shadow:  rgba(0, 255, 234, 0.244) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#card:hover #hovereff{
+    background-image: linear-gradient(to top left, rgb(76, 0, 255), rgb(0, 255, 247));
+    animation: progress;
+    transition: width 1s;
+}
+@keyframes progress {
+    form{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+#cimgc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba(39, 49, 241, 0.144);
+}
+#cimg{
+    width: 8rem;
+}
+#cardcontent{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem;
+}
+.smallicon{
+    width: 2rem;
+}
+#ctype{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem;
+}
+#price{
+    font-size: large;
+    color: rgb(255, 0, 111);
+}
+.inlinetext{
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+.textitem{
+    display: inline-flex;
+    align-items: center;
+}
+#cardcollector{
+    display: flex;
+    gap: 2rem;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

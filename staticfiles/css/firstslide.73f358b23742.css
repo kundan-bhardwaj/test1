@@ -1,0 +1,60 @@
+#top{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+#poster{
+    width: 45rem;
+    justify-self: flex-end;
+    filter: drop-shadow(0.1rem 0.1rem 3rem rgba(13, 0, 255, 0.295));
+}
+.quote {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-image: linear-gradient(to top left, rgb(76, 0, 255), rgb(0, 255, 247));
+    box-shadow: 0.15rem 0.15rem 3rem 0.1rem rgba(13, 0, 255, 0.455);
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1rem;
+    color: #ffffff;
+    transition: all ease 0.2s;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quote:hover {
+    scale: 1.1;
+    
+}
+
+.quote:active {
+    scale: 0.9;
+}
+
+#headline{
+    color: rgb(2, 2, 82);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#details{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+.di{
+    display: flex;
+    padding: 0.5rem;
+    font-weight: bold;
+    color: rgba(2, 2, 50, 0.704);
+}
+#right{
+    width: 2rem;
+}
+
+@media only screen and (max-with: 950px) {
+    #top{
+        flex-direction: column;
+    }
+    #poster{
+        justify-self: auto;
+    }
+}

@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/firstslide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+    <link rel="stylesheet" href="{% static 'css/newsletter.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>ABSA Learning</title>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <div id="navcontent">
+                <a href="/"><img id="logo" src="{% static 'images/logo.png' %}" alt="ABSA Learning"></a>
+                <div class="navbtn" id="cart">
+                    <img class="smallicon" src="{% static 'images/shopping-cart.png' %}" alt="">&nbsp;Cart
+                </div>
+                <div id="reg" class="auth">
+                    Register
+                </div>
+                <div id="sign" class="auth">
+                    Sign In
+                </div>
+            </div>
+        </nav>
+        <div id="top">
+            <div id="content">
+                <h1 id="headline">Seamlessly Connect and Learn with Our Hybrid Learning Management System.</h1>
+                <div id="details">
+                    <div class="di"><img id="right" src="{% static 'images/right.png' %}" alt="">&nbsp;Course Management</div>
+                    <div class="di"><img id="right" src="{% static 'images/right.png' %}" alt="">&nbsp;Engagement Tools</div>
+                    <div class="di"><img id="right" src="{% static 'images/right.png' %}" alt="">&nbsp;Assessment and Analytics</div>
+                    <div class="di"><img id="right" src="{% static 'images/right.png' %}" alt="">&nbsp;Flexibility and Accessibility
+                    </div>
+                </div>
+                <div class="quote">Have A Try</div>
+
+            </div>
+            <img id="poster" src="{% static 'images/poster.png' %}" alt="">
+        </div>
+        <div id="main">
+            <div>
+                <h1>Classroom Learning</h1>
+                <div id="cardcollector">
+                    <form action="details/" method="get">
+                        <button id="cbtn" type="submit" value = "{% static 'images/atom_8898077.png' %}" name = 'img'>
+                            <div id="card">
+                                <div id="cimgc">
+                                    <img id="cimg" src="{% static 'images/atom_8898077.png' %}" alt="">
+                                </div>
+                                <div id="cardcontent">
+                                    <h3>Regulatory Information For Power Engineers</h3>
+                                    <label id="price">$ 510.00</label>
+                                    <br>
+                                    <div class="inlinetext">
+                                        <label for="" class="textitem"><img class="smallicon" src="{% static 'images/hourglass.png' %}" alt="">8h 00min</label>
+                                        <label for="" class="textitem">EN</label>
+                                    </div>
+                                    <hr id="cline">
+                                    <div id="ctype"><img class="smallicon" src="{% static 'images/elearn.png' %}" alt="">&nbsp;E - Learning</div>
+                                </div>
+                                <div id="hovereff"></div>
+                            </div>
+                        </button>
+                    </form>
+                    <a style="text-decoration: none;" href="details/">
+                        <div id="card">
+                            <div id="cimgc">
+                                <img id="cimg" src="{% static 'images/atom_8898077.png' %}" alt="">
+                            </div>
+                            <div id="cardcontent">
+                                <h3>Regulatory Information For Power Engineers</h3>
+                                <label id="price">$ 510.00</label>
+                                <br>
+                                <div class="inlinetext">
+                                    <label for="" class="textitem"><img class="smallicon" src="{% static 'images/hourglass.png' %}" alt="">8h 00min</label>
+                                    <label for="" class="textitem">EN</label>
+                                </div>
+                                <hr>
+                                <div id="ctype"><img class="smallicon" src="{% static 'images/elearn.png' %}" alt="">&nbsp;E - Learning</div>
+                            </div>
+                            <div id="hovereff"></div>
+                        </div>
+                    </a>
+                    <a style="text-decoration: none;" href="details/">
+                        <div id="card">
+                            <div id="cimgc">
+                                <img id="cimg" src="{% static 'images/dosimeter_8898121.png' %}" alt="">
+                            </div>
+                            <div id="cardcontent">
+                                <h3>Regulatory Information For Power Engineers</h3>
+                                <label id="price">$ 510.00</label>
+                                <br>
+                                <div class="inlinetext">
+                                    <label for="" class="textitem"><img class="smallicon" src="{% static 'images/hourglass.png' %}" alt="">8h 00min</label>
+                                    <label for="" class="textitem">EN</label>
+                                </div>
+                                <hr>
+                                <div id="ctype"><img class="smallicon" src="{% static 'images/elearn.png' %}" alt="">&nbsp;E - Learning</div>
+                            </div>
+                            <div id="hovereff"></div>
+                        </div>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <h1>E - Learning</h1>
+                    <div id="cardcollector">
+                        <div id="card">
+                            <div id="cimgc">
+                                <img id="cimg" src="{% static 'images/maintenance_8898098.png' %}" alt="">
+                            </div>
+                            <div id="cardcontent">
+                                <h3>Regulatory Information For Power Engineers</h3>
+                                <label id="price"><img class="smallicon" src="{% static 'images/gift.png' %}" alt="">&nbsp;Free</label>
+                                <br>
+                                <div class="inlinetext">
+                                    <label for="" class="textitem"><img class="smallicon" src="{% static 'images/hourglass.png' %}" alt="">8h 00min</label>
+                                    <label for="" class="textitem">EN</label>
+                                </div>
+                                <hr>
+                                <div id="ctype"><img class="smallicon" src="{% static 'images/online-learning.png' %}" alt="">&nbsp;ILT (instructor led training)</div>
+                            </div>
+                            <div id="hovereff"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nlc">
+            <div id="newsletter">
+                <img id="nimg" src="{% static 'images/newsletter.png' %}" alt="">
+                <div id="ncontent">
+                    <h1>Subscribe our newsletter</h1>
+                    <p>get the latest updates about happnings in our company</p>
+                    <input id="nli" type="email" size="40">
+                    <div class="quote">SUBSCRIBE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

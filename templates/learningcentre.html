@@ -1,0 +1,287 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/learningcentre.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css'}">
+    <title>Learning Centre</title>
+</head>
+
+<body id="lcb">
+    <div id="lcc">
+        <div id="sidebar">
+            <div class="sbtn" onclick="opentab(this,'tab1')">
+                <div class="biconc">
+                    <img class="bicon" src="{% static 'images/user.png' %}" alt="">
+                </div>
+                My Profile
+            </div>
+            <div class="sbtn" onclick="opentab(this,'tab2')">
+                <div class="biconc">
+                    <img class="bicon" src="{% static 'images/school.png' %}" alt="">
+                </div>
+                My Learning Centre
+            </div>
+            <div class="sbtn" onclick="opentab(this,'tab3')">
+                <div class="biconc">
+                    <img class="bicon" src="{% static 'images/certificate.png' %}" alt="">
+                </div>
+                My Certificates
+            </div>
+            <div class="sbtn" onclick="opentab(this,'tab4')">
+                <div class="biconc">
+                    <img class="bicon" src="{% static 'images/videoconference.png' %}" alt="">
+                </div>
+                Resource Library
+            </div>
+            <div class="sbtn" onclick="opentab(this,'tab5')">
+                <div class="biconc">
+                    <img class="bicon" src="{% static 'images/online-library.png' %}" alt="">
+                </div>
+                My Library
+            </div>
+            <div class="sbtn" onclick="opentab(this,'tab6')">
+                <div class="biconc">
+                    <img class="bicon" src="{% static 'images/card-payment.png' %}" alt="">
+                </div>
+                My Transactions
+            </div>
+        </div>
+        <div id="tabs">
+            <div class="tab" id="tab1">
+                <div id="mprofile">
+                    <div id="avc">
+                        <img id="avtar" src="{% static 'images/man.png' %}" alt="">
+                        <div>
+                            <h1>@Someone_123</h1>
+                            <h2>someone doe</h2>
+                            <div id="mail"><img width="30rem" src="{% static 'images/email.png' %}"
+                                    alt="">&nbsp;doesomeone3567@email.com</div>
+                        </div>
+                    </div>
+                    <div id="uattrc">
+                        <div class="uattr">
+                            country: canada
+                        </div>
+                        <div class="uattr">
+                            cources enrolled: 5
+                        </div>
+                        <div class="uattr">
+                            attended sessions: 10
+                        </div>
+                        <div class="uattr">
+                            free resources used: 3
+                        </div>
+                    </div>
+                    <div id="delete">
+                        Delete Account
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab2">
+                <h1>cources enrolled</h1>
+                <div id="card">
+                    <div id="cimgc">
+                        <img id="cimg" src="{% static 'images/atom_8898077.png' %}" alt="">
+                    </div>
+                    <div id="cardcontent">
+                        <h3>Regulatory Information For Power Engineers</h3>
+                        <label id="price">$ 510.00</label>
+                        <br>
+                        <div class="inlinetext">
+                            <label for="" class="textitem"><img class="smallicon" src="{% static 'images/hourglass.png' %}" alt="">8h 00min</label>
+                            <label for="" class="textitem">EN</label>
+                        </div>
+                        <hr>
+                        <div id="ctype"><img class="smallicon" src="{% static 'images/elearn.png' %}" alt="">&nbsp;E - Learning</div>
+                    </div>
+                    <div id="hovereff"></div>
+                </div>
+            </div>
+            <div class="tab" id="tab3">
+                <div id="certificates">
+                    <div id="certificate">
+                        <img id="certl" src="{% static 'images/pdf.png' %}" alt="">
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, amet.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rem, facere
+                                accusantium quo numquam.</p>
+                        </div>
+                        <div id="cactions">
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/view.png' %}" alt="">
+                            <img class="action" src="{% static 'images/printer.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div id="certificate">
+                        <img id="certl" src="{% static 'images/pdf.png' %}" alt="">
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, amet.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rem, facere
+                                accusantium quo numquam.</p>
+                        </div>
+                        <div id="cactions">
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/view.png' %}" alt="">
+                            <img class="action" src="{% static 'images/printer.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div id="certificate">
+                        <img id="certl" src="{% static 'images/pdf.png' %}" alt="">
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, amet.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rem, facere
+                                accusantium quo numquam.</p>
+                        </div>
+                        <div id="cactions">
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/view.png' %}" alt="">
+                            <img class="action" src="{% static 'images/printer.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab4">
+                <div id="resources">
+                    <div class="res" id="resource">
+                        <img id="rlogo" src="{% static 'images/image (1).png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="res" id="resource">
+                        <img id="rlogo" src="{% static 'images/pdfl.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="res" id="resource">
+                        <img id="rlogo" src="{% static 'images/doc.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="res" id="resource">
+                        <img id="rlogo" src="{% static 'images/video.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="res" id="resource">
+                        <img id="rlogo" src="{% static 'images/xls.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="res" id="resource">
+                        <img id="rlogo" src="{% static 'images/doc.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark1.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab5">
+                <div id="resources">
+                    <div id="resource">
+                        <img id="rlogo" src="{% static 'images/doc.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div id="resource">
+                        <img id="rlogo" src="{% static 'images/video.png' %}" alt="">
+                        <div id="resdet">
+                            <h4>this is a resource</h4>
+                            <p>about power systems</p>
+                            <img class="action" src="{% static 'images/downloads.png' %}" alt="">
+                            <img class="action" src="{% static 'images/bookmark.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab6">
+                <div id="txn">
+                    <img id="rlogo" src="{% static 'images/transfer.png' %}" alt="">
+                    <div id="resdet">
+                        <h2>ID: AB569O77</h2>
+                        <h2>for: some cource</h2>
+                        <label for="">11:23:00</label>
+                        <label for="">11th sep 2023</label>
+                    </div>
+                    <div id="txbtns">
+                        <div class="pac" id="psuc">Payment Successfull</div>
+                    </div>
+                </div>
+                <div id="txn">
+                    <img id="rlogo" src="{% static 'images/transfer.png' %}" alt="">
+                    <div id="resdet">
+                        <h2>ID: AB569O77</h2>
+                        <h2>for: some cource</h2>
+                        <label for="">11:23:00</label>
+                        <label for="">11th sep 2023</label>
+                    </div>
+                    <div id="txbtns">
+                        <div class="pac" id="punsuc">Payment Unsuccessfull</div>
+                    </div>
+                </div>
+                <div id="txn">
+                    <img id="rlogo" src="{% static 'images/transfer.png' %}" alt="">
+                    <div id="resdet">
+                        <h2>ID: AB569O77</h2>
+                        <h2>for: some cource</h2>
+                        <label for="">11:23:00</label>
+                        <label for="">11th sep 2023</label>
+                    </div>
+                    <div id="txbtns">
+                        <div class="pac" id="psuc">Payment Successfull</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function opentab(btn, tab) {
+            let els1 = document.getElementsByClassName('tab')
+            let ele = document.getElementById(tab)
+            for (var i = 0; i < els1.length; i++) {
+                els1[i].style.display = 'none'
+            }
+            let els2 = document.getElementsByClassName('sbtn')
+            for (var i = 0; i < els2.length; i++) {
+                els2[i].style.boxShadow = ''
+                els2[i].style.backgroundImage = ''
+            }
+            btn.style.boxShadow = 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;'
+            btn.style.backgroundImage = 'linear-gradient(to top left, rgb(76, 0, 255), rgb(0, 255, 247))'
+            ele.style.display = 'block'
+        }
+    </script>
+</body>
+
+</html>

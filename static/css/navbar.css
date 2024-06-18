@@ -1,0 +1,68 @@
+nav{
+    padding: 0.5rem;
+    background-color: transparent;
+    backdrop-filter: blur(2rem);
+    border-bottom: 0.1rem solid rgb(6, 6, 81);
+}
+#navcontent{
+    display: flex;
+    gap: 2rem;
+}
+.navbtn{
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(150, 150, 255, 0.219);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navbtn:hover{
+    background-color: rgb(31, 31, 121);
+    color: aliceblue;
+    scale: 1.1;
+    box-shadow: 0.1rem 0.4rem 3rem 1rem rgba(14, 7, 138, 0.396);
+}
+#logo{
+    width: 15rem;
+}
+
+.auth{
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    padding: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    width: fit-content;
+    border: 0ch;
+    transition: 200ms;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    align-self: center;
+}
+.auth:hover{
+    box-shadow: 0.15rem 0.15rem 3rem 0.1rem rgba(0, 0, 0, 0.455);
+}
+#reg{
+    margin-left: auto;
+    color: #190384;
+    background-color: #3300ff3a;
+}
+#reg:hover{
+    background-color: #190384;
+    color: rgb(255, 255, 255);
+}
+#sign{
+    color: #058861;
+    background-color: #00ffaa53;
+}
+#sign:hover{
+    background-color: #058861;
+    color: rgb(255, 255, 255);
+}
+#cart{
+    justify-self: flex-end;
+    margin-left: auto;
+}

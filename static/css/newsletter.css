@@ -1,0 +1,41 @@
+#newsletter{
+    display: flex;
+    border-radius: 1rem;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to top left, rgb(76, 0, 255), rgb(0, 255, 247));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#nimgc{
+    
+    height: fit-content;
+    padding: 3rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 0.01rem solid black;
+    box-shadow: 0.05rem 0.05rem 4rem rgba(1, 9, 37, 0.21);
+}
+#nimg{
+    margin: -8rem;
+    height: fit-content;
+    width: 20rem;
+    filter: drop-shadow(0.05rem 0.05rem 2rem rgba(1, 9, 37, 0.368));
+}
+#nlc{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+#ncontent{
+    margin: 5rem;
+}
+#nli{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0em;
+    font-size: x-large;
+    transition: 0.1s;
+}
+#nli:focus{
+    outline: 0.3rem solid rgb(0, 0, 0);
+}

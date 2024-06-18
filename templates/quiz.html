@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+    <script src="{% static 'js/quiz.js' %}"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div>
+        <div id="theading">
+            <h1>test number 1</h1>
+        </div>
+        <div></div>
+        <div id="tcont">
+            <div id="qcont">
+                <div class="ques" id="q 1">
+                    <div id="st">
+                        <label>Q4</label>&nbsp;
+                        <label>. A parallel beam of light of wavelength 100 nm passes
+                            through a sample of atomic hydrogen gas in ground
+                            state. (a) Assume that when a photon supplies some of
+                            its energy to a hydrogen atom, the rest of the energy
+                            appears as another photon moving in the same direction
+                            as the incident photon. Neglecting the light emitted by
+                            the excited hydrogen atoms in the direction of the
+                            incident beam, what wavelengths may be observed in
+                            the transmitted beam ? (b) A radiation detector is placed
+                            near the gas to detect radiation coming perpendicular to
+                            the incident beam. Find the wavelengths of radiation
+                            that may be detected by the detector</label>
+                    </div>
+                    <div id="options">
+                        <div class="option" aria-checked="true">
+                            <div class="oname">A</div>
+                            <label>Only (I)</label>
+                            <img src="{% static 'images/eq.png' %}" alt="">
+                        </div>
+                        <div class="option">
+                            <div class="oname">B</div>
+                            <label>Only (II)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">C</div>
+                            <label>Both (II) and (III)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">D</div>
+                            <label>Both (I) and (III)</label>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div id="prev" class="nbtn" onclick="prev(this,1)">Prev. Ques</div>
+                        <div id="rev" class="nbtn">Mark For Review</div>
+                        <div id="next" class="nbtn" onclick="next(this,1)">Next Ques</div>
+                    </div>
+                </div>
+                <div class="ques" id="q 2" style="display: none;">
+                    <div id="st">
+                        <label>Q5</label>&nbsp;
+                        <label>A hydrogen atom in state n = 6 makes two successive
+                            transitions and reaches the ground state. In the first
+                            transition a photon of 1.
+                            13 eV is emitted. (a) Find the
+                            energy of the photon emitted in the second transition.
+                            (b) What is the value of n in the intermediate state ?</label>
+                    </div>
+                    <div id="options">
+                        <div class="option">
+                            <div class="oname">A</div>
+                            <label>Only (I)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">B</div>
+                            <label>Only (II)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">C</div>
+                            <label>the amount of hydrogen taken is much smaller than
+                                that present in the starn</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">D</div>
+                            <label>Both (I) and (III)</label>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div id="prev" class="nbtn" onclick="prev(this,2)">Prev. Ques</div>
+                        <div id="rev" class="nbtn">Mark For Review</div>
+                        <div id="next" class="nbtn" onclick="next(this,2)">Next Ques</div>
+                    </div>
+                </div>
+                <div class="ques" id="q 3" style="display: none;">
+                    <div id="st">
+                        <label>Q6</label>&nbsp;
+                        <label>[I] Monisha was about to tell her teacher the truth when her friend interrupted her.
+                            [II] No method of making other people agree to your viewpoint is as effective as this
+                            method.
+                            [III] The laboratory of physics is not only equipped with all state of the art instruments
+                            but also with
+                            outstanding physicists</label>
+                    </div>
+                    <div id="options">
+                        <div class="option">
+                            <div class="oname">A</div>
+                            <label>Only (I)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">B</div>
+                            <label>Only (II)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">C</div>
+                            <label>Both (II) and (III)</label>
+                        </div>
+                        <div class="option">
+                            <div class="oname">D</div>
+                            <label>Both (I) and (III)</label>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div id="prev" class="nbtn" onclick="prev(this,3)">Prev. Ques</div>
+                        <div id="rev" class="nbtn">Mark For Review</div>
+                        <div id="next" class="nbtn" onclick="next(this,3)">Next Ques</div>
+                    </div>
+                </div>
+            </div>
+            <div id="hiddenques" style="display: none;">
+
+            </div>
+            <div id='allques'>
+                <div id="qbucket">
+                    <div class="qbox" id="b 1" onclick='questoogle(this)'>1</div>
+                    <div class="qbox" id="b 2" onclick='questoogle(this)'>2</div>
+                    <div class="qbox" id="b 3" onclick='questoogle(this)'>3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
